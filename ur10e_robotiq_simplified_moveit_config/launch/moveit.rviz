@@ -3,9 +3,8 @@ Panels:
     Help Height: 84
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /MotionPlanning1
-      Splitter Ratio: 0.5882353186607361
+      Expanded: ~
+      Splitter Ratio: 0.6147058606147766
     Tree Height: 790
   - Class: rviz/Help
     Name: Help
@@ -296,7 +295,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 5.985970497131348
+      Distance: 3.5734663009643555
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -311,10 +310,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.13979704678058624
+      Pitch: 0.4147971272468567
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 0.7367638945579529
+      Yaw: 1.4417641162872314
     Saved: ~
 Window Geometry:
   Displays:
