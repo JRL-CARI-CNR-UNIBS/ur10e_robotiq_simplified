@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur10e_robotiq_simplified_description)/urdf/ur10e_robotiq_robot.urdf.xacro'" />
+</launch>
+
+
