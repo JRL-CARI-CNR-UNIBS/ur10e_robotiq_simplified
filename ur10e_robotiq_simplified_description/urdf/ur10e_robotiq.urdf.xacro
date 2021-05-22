@@ -3,7 +3,7 @@
        name="ur10e_robotiq_simplified" >
 
   <!-- common stuff -->
-  <xacro:include filename="$(find ur_e_description)/urdf/common.gazebo.xacro" />
+  <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" />
 
   <!-- ur10e -->
   <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e.urdf.xacro" />
@@ -48,7 +48,7 @@
     <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
   </joint>
     <xacro:robotiq_arg2f_85 prefix=""/>-->
-    
+
 
   <link name="robotiq_simplified">
     <inertial>
