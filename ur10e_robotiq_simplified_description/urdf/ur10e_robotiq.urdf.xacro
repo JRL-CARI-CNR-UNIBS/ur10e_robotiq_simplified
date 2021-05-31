@@ -41,13 +41,13 @@
   </inertial>
   </link>
 
-  <!--
+
     <joint name="robotiq_joint" type="fixed">
     <parent link="robotiq_coupler" />
     <child link = "robotiq_arg2f_base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
   </joint>
-    <xacro:robotiq_arg2f_85 prefix=""/>-->
+    <xacro:robotiq_arg2f_85 prefix=""/>
 
 
   <link name="robotiq_simplified">
