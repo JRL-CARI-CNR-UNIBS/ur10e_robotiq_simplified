@@ -1,12 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur10e_robotiq_simplified" >
 
-  <!-- common stuff -->
-  <!-- <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" /> -->
-
   <!-- ur10e -->
-  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e/ur10e.xacro" />
-
+  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e/ur10e_macro.xacro" />
+  <xacro:ur10e_robot prefix="" />
+  
   <!-- gripper -->
   <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
 
