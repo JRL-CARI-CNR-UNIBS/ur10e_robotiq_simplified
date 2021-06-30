@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro"
-       name="ur10e_robotiq_simplified" >
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur10e_robotiq_simplified" >
 
   <!-- common stuff -->
-  <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" />
+  <!-- <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" /> -->
 
   <!-- ur10e -->
-  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e.urdf.xacro" />
-	<xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
+  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e/ur10e.xacro" />
+
   <!-- gripper -->
+  <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
 
   <joint name="rq_coupler_joint" type="fixed">
     <parent link="tool0" />
@@ -41,8 +41,7 @@
   </inertial>
   </link>
 
-
-    <joint name="robotiq_joint" type="fixed">
+  <joint name="robotiq_joint" type="fixed">
     <parent link="robotiq_coupler" />
     <child link = "robotiq_arg2f_base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
@@ -85,7 +84,7 @@
     </collision>
   </link>
 
-      <joint name="robotiq_joint_simplified" type="fixed">
+    <joint name="robotiq_joint_simplified" type="fixed">
       <parent link="robotiq_coupler" />
       <child link = "robotiq_simplified" />
       <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
@@ -131,4 +130,5 @@
      </material>
      </collision>
   </link>
+
 </robot>
