@@ -1,10 +1,22 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur10e_robotiq_simplified" >
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+  name="ur10e_robotiq_simplified"
+  params=
+  "prefix
+  joint_limits_parameters_file
+  kinematics_parameters_file
+  physical_parameters_file
+  visual_parameters_file
+  transmission_hw_interface:=hardware_interface/PositionJointInterface
+  safety_limits:=false
+  safety_pos_margin:=0.15
+  safety_k_position:=20"
+>
 
   <!-- ur10e -->
-  <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e/ur10e_macro.xacro" />
-  <xacro:ur10e_robot prefix="" />
-  
+  <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro" />
+
+
   <!-- gripper -->
   <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
 
