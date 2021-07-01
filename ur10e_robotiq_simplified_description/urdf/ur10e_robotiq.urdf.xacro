@@ -1,21 +1,29 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro"
-  name="ur10e_robotiq_simplified"
-  params=
-  "prefix
-  joint_limits_parameters_file
-  kinematics_parameters_file
-  physical_parameters_file
-  visual_parameters_file
-  transmission_hw_interface:=hardware_interface/PositionJointInterface
-  safety_limits:=false
-  safety_pos_margin:=0.15
-  safety_k_position:=20"
->
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur10e_robotiq_simplified">
+
+  <xacro:macro name="ur10e_robotiq_simplified" params=
+   "prefix:=''
+    joint_limits_parameters_file:='$(find ur_description)/config/ur10e/joint_limits.yaml'
+    kinematics_parameters_file:='$(find ur_description)/config/ur10e/default_kinematics.yaml'
+    physical_parameters_file:='$(find ur_description)/config/ur10e/physical_parameters.yaml'
+    transmission_hw_interface:=hardware_interface/PositionJointInterface
+    safety_limits:=false
+    safety_pos_margin:=0.15
+    safety_k_position:=20 ">
 
   <!-- ur10e -->
-  <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro" />
-
+  <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro"/>
+  <xacro:ur10e_robot
+    prefix = "${prefix}"
+    joint_limits_parameters_file="${joint_limits_parameters_file}"
+    kinematics_parameters_file="${kinematics_parameters_file}"
+    physical_parameters_file="${physical_parameters_file}"
+    visual_parameters_file='$(find ur_simplified_description)/config/ur10e/simplified_visual_parameters.yaml'
+    transmission_hw_interface="${transmission_hw_interface}"
+    safety_limits="${safety_limits}"
+    safety_pos_margin="${safety_pos_margin}"
+    safety_k_position="${safety_k_position}"
+  />
 
   <!-- gripper -->
   <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
@@ -140,5 +148,7 @@
      </material>
      </collision>
   </link>
+
+  </xacro:macro>
 
 </robot>
