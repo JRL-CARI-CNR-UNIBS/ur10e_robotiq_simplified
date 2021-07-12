@@ -8,8 +8,8 @@
   <!-- ur10e -->
   <xacro:include filename="$(find ur_simplified_description)/urdf/ur10e.urdf.xacro" />
 	<xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" />
-  <!-- gripper -->
 
+  <!-- gripper -->
   <joint name="rq_coupler_joint" type="fixed">
     <parent link="tool0" />
     <child  link = "robotiq_coupler" />
@@ -42,12 +42,12 @@
   </link>
 
 
-    <joint name="robotiq_joint" type="fixed">
+  <!-- <joint name="robotiq_joint" type="fixed">
     <parent link="robotiq_coupler" />
     <child link = "robotiq_arg2f_base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
   </joint>
-    <xacro:robotiq_arg2f_85 prefix=""/>
+    <xacro:robotiq_arg2f_85 prefix=""/> -->
 
 
   <link name="robotiq_simplified">

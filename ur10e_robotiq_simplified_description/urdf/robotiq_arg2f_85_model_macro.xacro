@@ -19,7 +19,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
   </xacro:macro>
@@ -41,7 +43,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
   </xacro:macro>
@@ -63,7 +67,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
   </xacro:macro>
@@ -85,7 +91,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
   </xacro:macro>
@@ -103,7 +111,9 @@
         </material>
       </visual>
       <collision>
-            <!--   NO COLLISIONS  -->
+        <geometry>
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+        </geometry>
       </collision>
     </link>
   </xacro:macro>
