@@ -21,6 +21,7 @@
       <collision>
         <geometry>
           <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
         </geometry>
       </collision>
     </link>

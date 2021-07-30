@@ -28,6 +28,7 @@
   <!-- gripper -->
   <!-- <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" /> -->
 
+  <!-- gripper -->
   <joint name="rq_coupler_joint" type="fixed">
     <parent link="tool0" />
     <child  link = "robotiq_coupler" />
