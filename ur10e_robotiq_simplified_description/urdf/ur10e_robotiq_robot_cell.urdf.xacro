@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="ur10e_robotiq_simplified" >
+
+  <!-- ur10e+robotiq -->
+  <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/ur10e_robotiq.urdf.xacro" />
+  <xacro:ur10e_robotiq_simplified /> <!--DO NOT DELETE -->
+
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+   <parent link ="world" />
+   <child link ="base_link" />
+   <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+ </joint>
+ 
+</robot>
