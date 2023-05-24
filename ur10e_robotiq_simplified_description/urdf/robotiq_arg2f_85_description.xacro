@@ -18,11 +18,11 @@
           <color rgba="0.1 0.1 0.1 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-          <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+          <cylinder length="0.0" radius="0.0"/>         
         </geometry>
-      </collision>
+      </collision> -->
     </link>
   </xacro:macro>
 
@@ -43,12 +43,12 @@
           <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-          <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
-            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+          <cylinder length="0.0" radius="0.0"/>          
+            <cylinder length="0.0" radius="0.0"/>         
         </geometry>
-      </collision>
+      </collision> -->
     </link>
   </xacro:macro>
 
@@ -68,11 +68,11 @@
           <color rgba="0.1 0.1 0.1 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-            <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+            <cylinder length="0.0" radius="0.0"/>        
         </geometry>
-      </collision>
+      </collision> -->
     </link>
   </xacro:macro>
 
@@ -92,11 +92,11 @@
           <color rgba="0.1 0.1 0.1 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-          <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+          <cylinder length="0.0" radius="0.0"/>         
         </geometry>
-      </collision>
+      </collision>  -->
     </link>
   </xacro:macro>
 
@@ -116,11 +116,11 @@
           <color rgba="0.1 0.1 0.1 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-          <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+          <cylinder length="0.0" radius="0.0"/>         
         </geometry>
-      </collision>
+      </collision> -->
     </link>
   </xacro:macro>
 
@@ -136,11 +136,11 @@
           <color rgba="0.9 0.9 0.9 1" />
         </material>
       </visual>
-      <collision>
+      <!-- <collision>
         <geometry>
-          <cylinder length="0.0" radius="0.0"/>          <!--   NO COLLISIONS  -->
+          <cylinder length="0.0" radius="0.0"/>      
         </geometry>
-      </collision>
+      </collision> -->
     </link>
   </xacro:macro>
 
