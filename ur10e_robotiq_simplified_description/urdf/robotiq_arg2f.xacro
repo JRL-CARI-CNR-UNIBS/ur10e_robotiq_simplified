@@ -38,4 +38,5 @@
     <xacro:inner_finger_pad prefix="${prefix}" fingerprefix="${fingerprefix}"/>
     <xacro:inner_knuckle prefix="${prefix}" fingerprefix="${fingerprefix}" stroke="${stroke}"/>
   </xacro:macro>
+
 </robot>

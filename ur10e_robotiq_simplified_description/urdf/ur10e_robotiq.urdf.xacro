@@ -27,6 +27,7 @@
 
   <!-- gripper -->
   <!-- <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_model_macro.xacro" /> -->
+  <xacro:include filename="$(find ur10e_robotiq_simplified_description)/urdf/robotiq_arg2f_85_complete.xacro" />
 
   <!-- gripper -->
   <joint name="rq_coupler_joint" type="fixed">
@@ -60,12 +61,21 @@
   </inertial>
   </link>
 
-  <!-- <joint name="robotiq_joint" type="fixed">
+  <!-- <xacro:robotiq_arg2f_base_link prefix=""/>
+  <xacro:finger_joints prefix=""/>
+  <xacro:finger_links prefix=""/>
+
+  <xacro:finger_joints fingerprefix=""/>
+  <xacro:finger_joints reflect="1"/>
+
+  <xacro:finger_links fingerprefix=""/>
+  <xacro:finger_links stroke="0.05"/> -->
+
+  <joint name="robotiq_joint" type="fixed">
     <parent link="robotiq_coupler" />
     <child link = "robotiq_arg2f_base_link" />
     <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
   </joint>
-    <xacro:robotiq_arg2f_85 prefix=""/> -->
 
 
   <link name="robotiq_simplified">
@@ -101,9 +111,9 @@
          <color rgba="0.1 0.1 0.1 1"/>
        </material>
     </collision>
-  </link>
+  </link> 
 
-    <joint name="robotiq_joint_simplified" type="fixed">
+     <joint name="robotiq_joint_simplified" type="fixed">
       <parent link="robotiq_coupler" />
       <child link = "robotiq_simplified" />
       <origin xyz="0.0 0.0 0.0" rpy="0 0 ${0.0*pi}" />
